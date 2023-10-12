@@ -1,0 +1,14 @@
+#one0{
+    font: italic normal 100px "阿里妈妈刀隶体",sans-serif;
+    color: rgb(58, 107, 43);
+}
+
+#one1{
+    font: italic normal 70px "MaShanZheng",sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+@font-face{
+    font-family: 'MaShanZheng';
+    src: url(../fonts/MaShanZheng-Regular.ttf)
+}
