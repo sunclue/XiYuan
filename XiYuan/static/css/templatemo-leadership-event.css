@@ -1088,7 +1088,3 @@ strong {
     justify-content: center;
   }
 }
-
-.alert{
-  background: var(--navbar-bg-color);
-}
