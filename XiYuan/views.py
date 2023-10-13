@@ -9,8 +9,11 @@ def index():
         return redirect(url_for('index'))
     return render_template('index.html')
 
-@app.route('/market')
+@app.route('/market',methods=['GET','POST'])
 def market():
+    if request.method=='POST':
+        flash('购买暂未开放')
+        return redirect(url_for('market'))
     return render_template('market.html')
 
 @app.route('/plant',methods=['GET','POST'])

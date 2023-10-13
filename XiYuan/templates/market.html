@@ -3,7 +3,11 @@
 {% block content %}
 
 <section class="schedule section-padding" id="section_4">
-    
+    {% for message in get_flashed_messages() %}
+        <div class="pb-5"></div>
+        <div class="custom-btn text-center">{{ message }}</div>
+        <div class="pb-5"></div>
+    {% endfor %}
     <div class="container">
         <div class="row">
             <!-- <u class="text-info"> -->
@@ -20,7 +24,12 @@
                         
                         <h4 class="mb-2">一些标题一些标题一些标题一些标题</h4>
                         <p>一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述</p>
-                        <a class="col-6 custom-btn btn mt-3 pl-3" href="#">点击购买</a>
+                        <form title="purchase" method="post">
+                            <div class="col-6">
+                                <button type="submit" class="form-control col-6 custom-btn btn mt-3 pl-3">点击购买</button>
+                            </div>
+                        </form>
+                
                     </div>
                 </div>
                 <div class="row border-bottom pb-5 mb-5">
