@@ -3,12 +3,20 @@
 {% block content %}
 
 <section class="pricing section-padding">
+    {% for message in get_flashed_messages() %}
+        <div class="pb-5"></div>
+        <div class="custom-btn text-center">{{ message }}</div>
+        <div class="pb-5"></div>
+    {% endfor %}
     <div class="container">
         <div class="row">
+            <div class="col-lg-10 col-12 text-center mx-auto mb-5">
+                <h2>科技园区</h2>
+            </div>
 
             <div class="row border-bottom pb-5 mb-5">
                 <div class="col-lg-8 col-12 mx-auto">
-                    <form class="custom-form contact-form bg-white shadow-lg" action="#" method="post" role="form">
+                    <form class="custom-form contact-form bg-white shadow-lg" method="post" role="form">
                         <h2>预约参观</h2>
 
                         <div class="row">
@@ -21,7 +29,7 @@
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-12">                                    
-                                <input type="date" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                <input type="date" name="subject" id="subject" class="form-control" placeholder="Subject" required="">
                             </div>
 
                             <div class="col-12">
