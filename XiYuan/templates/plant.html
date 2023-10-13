@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="speakers section-padding">
+    <div class="container">
+        <div class="row">
+            
+            <div class=" col-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="speakers-thumb speakers-thumb-big">           
+                    <img src="{{url_for('static',filename='images/placeholder6.png')}}" class="img-fluid speakers-image" alt="">
+                </div>
+            </div>
+
+            <nav>
+                <div class="nav nav-tabs align-items-baseline" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-DayOne-tab" data-bs-toggle="tab" data-bs-target="#nav-DayOne" type="button" role="tab" aria-controls="nav-DayOne" aria-selected="true">
+                        <h3>
+                            <span>园区简介</span>
+                            <small>Visit Reservation</small>
+                        </h3>
+                    </button>
+
+                    <button class="nav-link" id="nav-DayTwo-tab" data-bs-toggle="tab" data-bs-target="#nav-DayTwo" type="button" role="tab" aria-controls="nav-DayTwo" aria-selected="false">
+                        <h3>
+                            <span>预约服务</span>
+                            <small>Technology Exhibit</small>
+                        </h3>
+                    </button>
+
+            </nav>
+
+            <div class="tab-content mt-5" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-DayOne" role="tabpanel" aria-labelledby="nav-DayOne-tab">
+                    <div class="row border-bottom pb-5 mb-5">
+                        <div class="row pb-5 mb-5">
+                            <div class="col-lg-4 col-12">
+                                <img src="{{url_for('static',filename='images/placeholder10.png')}}" class="schedule-image img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                
+                                <h4 class="mb-2">一些标题一些标题一些标题一些标题</h4>
+                                <p>一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述</p>
+                            </div>
+                        </div>
+                        <div class="row pb-5 mb-5">
+                            <div class="col-lg-4 col-12">
+                                <img src="{{url_for('static',filename='images/placeholder11.png')}}" class="schedule-image img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                <h4 class="mb-2">一些标题一些标题一些标题一些标题</h4>
+                                <p>一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述</p>
+                            </div>
+                        </div>
+                        <div class="row pb-5 mb-5">
+                            <div class="col-lg-4 col-12">
+                                <img src="{{url_for('static',filename='images/placeholder12.png')}}" class="schedule-image img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                <h4 class="mb-2">一些标题一些标题一些标题一些标题</h4>
+                                <p>一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述</p>
+                            </div>
+                        </div>
+                    
+                        <div class="row pb-5 mb-5">
+                            <div class="col-lg-4 col-12">
+                                <img src="{{url_for('static',filename='images/placeholder13.png')}}" class="schedule-image img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                
+                                <h4 class="mb-2">一些标题一些标题一些标题一些标题</h4>
+                                <p>一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述一些详细叙述</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-DayTwo" role="tabpanel" aria-labelledby="nav-DayTwo-tab">
+                    <div class="row border-bottom pb-5 mb-5">
+                        <div class="col-lg-8 col-12 mx-auto pb-5">
+                            <form class="custom-form contact-form bg-white shadow-lg" action="#" method="post" role="form">
+                                <h2>预约采摘</h2>
+        
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-12">                                    
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
+                                    </div>
+        
+                                    <div class="col-lg-4 col-md-4 col-12">         
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required="">
+                                    </div>
+        
+                                    <div class="col-lg-4 col-md-4 col-12">                                    
+                                        <input type="date" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                    </div>
+        
+                                    <div class="col-12">
+                                        <button type="submit" class="form-control">Submit</button>
+                                    </div>
+        
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <form class="custom-form contact-form bg-white shadow-lg" action="#" method="post" role="form">
+                                <h2>预约配送</h2>
+        
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-12">                                    
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
+                                    </div>
+        
+                                    <div class="col-lg-4 col-md-4 col-12">         
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required="">
+                                    </div>
+        
+                                    <div class="col-lg-4 col-md-4 col-12">                                    
+                                        <input type="date" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                    </div>
+        
+                                    <div class="col-12">
+                                        <button type="submit" class="form-control">Submit</button>
+                                    </div>
+        
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
